@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Outsource your truck dispatching with Bookmeload. We book loads, negotiate rates, and handle the hassle so you can drive worry-free." />
+  <title>Bookmeload | Truck Dispatching Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; }
+    header { background: #0e1a2b; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+    nav { background: white; padding: 15px 20px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 999; }
+    nav a { margin: 0 15px; text-decoration: none; color: #0e1a2b; font-weight: bold; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .services, .trucks, .brokers { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); flex: 1 1 250px; text-align: center; }
+    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+    .brokers img { width: 120px; height: auto; object-fit: contain; margin: 10px; filter: grayscale(100%); transition: filter 0.3s ease; }
+    .brokers img:hover { filter: grayscale(0%); }
+    .blogs article { margin-bottom: 30px; }
+    footer { background: #0e1a2b; color: white; text-align: center; padding: 30px 20px; }
+    .cta-btn { background: #ff7a00; color: white; padding: 12px 25px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#trucks">Trucks</a>
+    <a href="#brokers">Partners</a>
+    <a href="#blogs">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header data-aos="fade-up">
+    <h1>Bookmeload</h1>
+    <p>We Book the Loads — You Hit the Road</p>
+    <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+  </header>
+  <section id="about" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>Bookmeload helps truck carriers focus on the road by handling all dispatch operations. From negotiating best rates to completing broker paperwork — we’re your backend logistics partner.</p>
+  </section>
+  <section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><i class="fas fa-handshake"></i><h3>Load Booking</h3><p>We negotiate and secure top-paying loads with trusted brokers.</p></div>
+      <div class="card"><i class="fas fa-file-alt"></i><h3>Paperwork Handling</h3><p>Carrier packets, rate confirmations, and invoicing handled start to finish.</p></div>
+      <div class="card"><i class="fas fa-headset"></i><h3>24/7 Support</h3><p>Always available — day or night — to assist our drivers.</p></div>
+      <div class="card"><i class="fas fa-chart-line"></i><h3>Rate Negotiation</h3><p>We work hard to get the best lanes at the best rates possible.</p></div>
+    </div>
+  </section>
+  <section id="trucks" data-aos="fade-up">
+    <h2>We Dispatch For</h2>
+    <div class="trucks">
+      <div class="card">
+        <img src="dryvan.jpg" alt="Dry Van">
+        <h3>Dry Vans</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599061077111-83b5b470f651?auto=format&fit=crop&w=500&q=80" alt="Reefer">
+        <h3>Reefers</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617331737042-0d24b6903342?auto=format&fit=crop&w=500&q=80" alt="Flatbed">
+        <h3>Flatbeds</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1579699583812-61f63e02cc8c?auto=format&fit=crop&w=500&q=80" alt="Power Only">
+        <h3>Power Only</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1629472771781-f35c2e1f3760?auto=format&fit=crop&w=500&q=80" alt="Box Truck">
+        <h3>Box Trucks</h3>
+      </div>
+    </div>
+  </section>
+  <section id="brokers" data-aos="fade-up">
+    <h2>Our Broker Partners</h2>
+    <p>We work directly with leading freight brokers in the industry to get the best loads for our carriers.</p>
+    <div class="brokers">
+      <img src="https://1000logos.net/wp-content/uploads/2021/05/Coyote-Logo.png" alt="Coyote Logistics">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/CH_Robinson_logo.svg" alt="CH Robinson">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Schneider_National_logo.svg" alt="Schneider">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/XPO_Logistics_logo.svg" alt="XPO Logistics">
+    </div>
+  </section>
+  <section id="blogs" class="blogs" data-aos="fade-up">
+    <h2>From the Blog</h2>
+    <article>
+      <h3>Why Dispatchers Save Carriers 10+ Hours a Week</h3>
+      <p>We help you skip the load board drama and get straight to driving. With us, you're booked, briefed, and back on the road — fast.</p>
+    </article>
+    <article>
+      <h3>Top 3 Mistakes Carriers Make Without a Dispatcher</h3>
+      <p>Missed loads, underpaid trips, and paperwork delays. See why smart carriers leave dispatch to us.</p>
+    </article>
+    <article>
+      <h3>From Load Board to Payday: How Bookmeload Works</h3>
+      <p>We negotiate, book, and handle all backend work — so you can focus on miles and money.</p>
+    </article>
+  </section>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:alexharrialexharriet83@gmail.com">alexharrialexharriet83@gmail.com</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Bookmeload. All rights reserved.</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
